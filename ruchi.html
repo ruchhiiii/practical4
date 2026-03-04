@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Table Display</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        tfoot {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Employee Data Table</h1>
+
+    <table>
+        <caption>Monthly Savings by Employee</caption>
+        
+        <!-- Column Grouping for styling (optional) -->
+        <colgroup>
+            <col span="2" style="background-color: #f0f8ff;">
+            <col style="background-color: #fafad2;">
+        </colgroup>
+
+        <!-- Table Header Section -->
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Month</th>
+                <th scope="col">Savings</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body Section -->
+        <tbody>
+            <tr>
+                <td rowspan="2">John Doe</td>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>January</td>
+                <td>$200</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer Section -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Savings:</td>
+                <td>$350</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>

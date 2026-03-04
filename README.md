@@ -1,2 +1,2 @@
-# practical4
-for designing tabular
+# practical - 4
+for designing tabular data
